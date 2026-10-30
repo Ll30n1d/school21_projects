@@ -1,0 +1,6 @@
+Chain INPUT (policy DROP 954 packets, 115K bytes)
+ pkts bytes target     prot opt in     out     source               destination         
+    0     0 ACCEPT     all  --  lo     any     anywhere             anywhere            
+36920   41M ACCEPT     all  --  any    any     anywhere             anywhere             ctstate RELATED,ESTABLISHED
+    0     0 ACCEPT     tcp  --  any    any     anywhere             anywhere             tcp dpt:ssh
+    0     0 ACCEPT     tcp  --  any    any     anywhere             anywhere             tcp dpt:http
